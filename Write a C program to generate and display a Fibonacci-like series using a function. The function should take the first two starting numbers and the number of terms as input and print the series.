@@ -1,0 +1,23 @@
+#include <stdio.h>
+void fibo(int a,int b,int n){
+    int temp;
+    for(int i=1;i<=n;i++){
+        printf(" %d  ",a);
+        temp=a+b;
+        a=b;
+        b=temp;
+    }
+}
+int main(){
+    int a,b,n;
+    printf("Enter first starting number\t: ");
+    scanf("%d",&a);
+    printf("Enter second starting number\t: ");
+    scanf("%d",&b);
+    printf("Enter number of terms: ");
+    scanf("%d",&n);
+
+    printf("Fibonacci series: ");
+    fibo(a,b,n);
+    return 0;
+}
