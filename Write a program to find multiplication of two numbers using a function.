@@ -1,0 +1,14 @@
+#include <stdio.h>
+float multi(float x,float y)
+{
+    return x*y;
+}
+int main(){
+    float a, b, result;
+    printf("Enter Numbers: ");
+    scanf("%f %f",&a,&b);
+    result = multi(a,b);
+
+    printf("Result= %.2f",result);
+    return 0;
+}
